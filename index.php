@@ -14,10 +14,12 @@
 <body>
 
 <h2>Mostrar Registros</h2>
-<?php include('mostrar.php');?>
+<form action="jesuita.php" method="post">
+    <input type="submit" name="mostrar" value="mostrar">
+</form>
 
 <h2>Crear Registro</h2>
-<form action="crear.php" method="post">
+<form action="jesuita.php" method="post">
     <label for="idjesuita">Jesuita:</label>
     <input type="text" name="idjesuita" required>
     <br>
@@ -27,13 +29,13 @@
     <label for="firma">Firma:</label>
     <input type="text" name="firma" required>
     <br>
-    <input type="submit" name="submit" value="crear">
+    <input type="submit" name="crear" value="crear">
 </form>
 
 
 
 <h2>Actualizar Registro</h2>
-<form action="actualizar.php" method="post">
+<form action="jesuita.php" method="post">
     <label for="idJesuita">ID del Registro a Actualizar:</label>
     <input type="text" name="idJesuita" required>
     <br>
@@ -43,15 +45,15 @@
     <label for="firma">Nuevo Valor de Firma:</label>
     <input type="text" name="firma" required>
     <br>
-    <input type="submit" name="submit" value="actualizar">
+    <input type="submit" name="modificar" value="modificar">
 </form>
 
 <h2>Eliminar Registro</h2>
-<form action="eliminar.php" method="post">
+<form action="jesuita.php" method="post">
     <label for="idJesuita">ID del Registro a Eliminar:</label>
     <input type="text" name="idJesuita" required>
     <br>
-    <input type="submit" name="submit" value="eliminar">
+    <input type="submit" name="eliminar" value="eliminar">
 </form>
 
 </body>
