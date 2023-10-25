@@ -1,8 +1,13 @@
 <?php
-$server = "localhost";
-$usuario = "root";
-$contra = "";
-$bbdd = "jesuitas";
+class Conexion {
+    private $server = "localhost";
+    private $usuario = "root";
+    private $contra = "";
+    private $bbdd = "jesuitas";
+    public $conn;
 
-$conexion = new mysqli($server, $usuario, $contra, $bbdd);
+    public function __construct() {
+        $this->conn = new mysqli($this->server, $this->usuario, $this->contra, $this->bbdd);
+    }
+}
 ?>
