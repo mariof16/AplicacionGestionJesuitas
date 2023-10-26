@@ -1,4 +1,5 @@
 <?php
+//Archivo PHP que gestiona que has enviado en el submit para ejecutar la funcion asignada
 include '../conexion/conexion.php';
 include 'metodoslugares.php';
 

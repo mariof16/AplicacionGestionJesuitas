@@ -1,4 +1,5 @@
 <?php
+//Archivo PHP que gestiona que has enviado en el submit para ejecutar la funcion asignada
 include '../conexion/conexion.php';
 include 'metodosjesuitas.php';
 
@@ -15,10 +16,6 @@ if(isset($_POST["eliminar"])){
 }
 if(isset($_POST["modificar"])){
     $metodos->modificar($conexion->conn);
-    $metodos->volver();
-}
-if(isset($_POST["mostrar"])){
-    $metodos->mostrar($conexion->conn);
     $metodos->volver();
 }
 ?>
