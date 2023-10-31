@@ -1,0 +1,31 @@
+<!--Mario Fuentes Fernandez-->
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CRUD</title>
+        <link rel="stylesheet" href="estilo/estilo.css">
+    </head>
+    <body class="formulario">
+        <a href="crud.html">Volver</a>
+        <h2>Mostrar Registros</h2>
+        <form action="procesos/gestionlugar.php" method="post">
+            <input type="submit" name="mostrar" value="mostrar">
+        </form>
+
+        <h2>Realizar Visita</h2>
+        <form action="procesos/gestionlugar.php" method="post">
+            <label for="ip">N puesto:</label>
+            <input type="text" name="npuesto" required>
+            <br>
+            <label for="lugar">Lugar:</label>
+            <input type="text" name="lugar" required>
+            <br>
+            <label for="descripcion">Firma:</label>
+            <input type="text" name="descripcion" required>
+            <br>
+            <input type="submit" name="crear" value="crear">
+        </form>
+    </body>
+</html>

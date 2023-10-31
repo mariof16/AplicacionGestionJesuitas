@@ -1,0 +1,23 @@
+a{
+    color: white;
+    text-decoration: none;
+    background-color: darkgrey;
+    width: 125px;
+    display:block;
+    text-align: center;
+    border-radius: 5px;
+}
+.filas>a{
+    display: inline-block;
+}
+.opciones{
+    border: 1px solid black;
+    padding: 15px;
+    width: fit-content;
+}
+.opciones>a{
+    margin: 15px 0px;  
+}
+.opciones>input[type="text"]{
+    margin-right:0px;
+}
