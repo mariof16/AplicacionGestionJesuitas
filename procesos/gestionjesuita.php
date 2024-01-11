@@ -1,5 +1,7 @@
 <?php
 //Archivo PHP que gestiona que has enviado en el submit para ejecutar la funcion asignada
+//Guardar campo que admite null como null si esta vacio
+
 include '../conexion/conexion.php';
 include 'metodosjesuitas.php';
 
